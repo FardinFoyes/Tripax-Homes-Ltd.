@@ -1,0 +1,230 @@
+:root {
+    --bg: #0d1f36;
+    --text: #ffffff;
+    --muted: rgba(255, 255, 255, 0.72);
+    --gold: #ffbb00;
+    --gold-dark: #b18202;
+    --nav: rgba(255, 255, 255, 0.82);
+    --outline: rgba(255, 255, 255, 0.28);
+    --shadow: rgba(0, 0, 0, 0.35);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    background: #071423;
+    color: var(--text);
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    width: min(1440px, calc(100% - 64px));
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    padding: 18px 0;
+    animation: anime 0.5s ease forwards;
+}
+
+/* For animation */
+@keyframes anime {
+    from {
+        opacity: 0;
+        transform: translate(0%, -40%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0%, 0);
+    }
+}
+
+.brand-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.brand-icon {
+    width: 28px;
+    height: 28px;
+    display: block;
+}
+
+.brand-text {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.nav {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    margin-left: auto;
+    margin-right: 26px;
+}
+
+.nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--nav);
+    transition: opacity 0.2s ease;
+}
+
+.nav a:hover {
+    color: #000000;
+    border-radius: 8px;
+    width: 80px;
+    height: 40px;
+    background: var(--gold);
+    /* background: linear-gradient(#2e3192, #1bffff); */
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-small {
+    height: 40px;
+    padding: 0 22px;
+    font-size: 15px;
+}
+
+.btn-primary {
+    background: var(--gold);
+    color: #1b1b1b;
+    box-shadow: 0 8px 24px rgba(239, 184, 31, 0.18);
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: #2a8301;
+}
+
+.btn-outline {
+    height: 46px;
+    padding: 0 28px;
+    border: 1.5px solid var(--outline);
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(2px);
+}
+
+/* Hero section */
+.hero-1 {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background:
+        linear-gradient(rgba(7, 20, 35, 0.0), rgba(7, 20, 35, 0.75)),
+        url("/assets/hero-bg.png") center center / cover no-repeat;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.hero-title {
+    color: var(--gold-dark);
+    margin: 0 0 40px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+}
+
+.hero-1 h1 {
+  margin: 0;
+  font-size: clamp(56px, 5.4vw, 84px);
+  line-height: 0.98;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  text-shadow: 0 6px 22px rgba(0, 0, 0, 0.38);
+}
+
+.hero-description {
+  max-width: 760px;
+  margin: 30px 0 0;
+  font-size: 20px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.hero-actions .btn-primary {
+  height: 46px;
+  padding: 0 28px;
+  font-size: 17px;
+}
+
+.hero-actions .btn-contact {
+    height: 46px;
+    padding: 0 28px;
+    border: 1.5px solid var(--outline);
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(2px);
+}
+
+.btn-contact:hover{
+    color: #000000;
+    background: linear-gradient(#002c5f, #6fb0fa);
+}
