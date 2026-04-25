@@ -163,7 +163,7 @@ a {
     min-height: 100vh;
     overflow: hidden;
     background:
-        linear-gradient(rgba(7, 20, 35, 0.0), rgba(7, 20, 35, 0.75)),
+        linear-gradient(rgba(7, 20, 35, .75), rgba(7, 20, 35, 0)),
         url("../assets/hero-bg.png") center center / cover no-repeat;
 }
 
@@ -395,16 +395,16 @@ a {
     text-align: center;
 }
 
-.section-label {
+.projectssection-label {
     color: #F5A623;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 2.5px;
     text-transform: uppercase;
     margin-bottom: 16px;
 }
 
-.section-title {
+.projectssection-title {
     font-family: 'Playfair Display', serif;
     font-size: 52px;
     font-weight: 700;
@@ -412,10 +412,10 @@ a {
     margin-bottom: 20px;
 }
 
-.section-subtitle {
+.projectssection-subtitle {
     font-size: 15px;
     color: #7a8299;
-    max-width: 520px;
+    max-width: 6000px;
     margin: 0 auto 60px;
     line-height: 1.7;
 }
@@ -576,7 +576,9 @@ a {
 .strategic {
     position: relative;
     height: 100vh;
-    background: url('../assets/SL-bg.png') center/cover no-repeat;
+    background:
+        linear-gradient(rgba(7, 20, 35, 1), rgba(7, 20, 35, 0.25)),
+        url("../assets/SL-bg.png") center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -601,7 +603,8 @@ a {
 .sub-title {
     color: #f5a623;
     letter-spacing: 3px;
-    font-size: 12px;
+    font-size: 18px;
+    font-weight: bold;
     margin-bottom: 15px;
 }
 
@@ -1108,15 +1111,15 @@ body {
 }
 
 .footer-brand-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 30px;
-  font-weight: 700;
-  color: #ffffff;
-} 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
 
-.footer-brand-logo img{
+.footer-brand-logo img {
     width: 50px;
     height: 40px;
     display: block;
