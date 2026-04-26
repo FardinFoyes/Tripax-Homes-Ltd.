@@ -174,7 +174,8 @@
             <div class="projects-container">
                 <p class="projectssection-label">OUR PORTFOLIO</p>
                 <h2 class="projectssection-title">Landmark Projects</h2>
-                <p class="projectssection-subtitle">Discover our exceptional portfolio of completed, ongoing, and upcoming
+                <p class="projectssection-subtitle">Discover our exceptional portfolio of completed, ongoing, and
+                    upcoming
                     developments
                     across Purbachal.</p>
 
@@ -273,7 +274,7 @@
         </section>
 
         <!-- Strategic Location Section -->
-        <section class="strategic">
+        <section id="strategic">
             <div class="st-overlay"></div>
 
             <div class="st-container">
@@ -337,9 +338,10 @@
         <!-- Services -->
         <section id="services">
             <div class="services-container">
-                <p class="section-label">WHAT WE OFFER</p>
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">Comprehensive real estate solutions tailored to bring your vision to life
+                <p class="servicessection-label">WHAT WE OFFER</p>
+                <h2 class="servicessection-title">Our Services</h2>
+                <p class="servicessection-subtitle">Comprehensive real estate solutions tailored to bring your vision to
+                    life
                 </p>
 
                 <div class="services-grid">
@@ -480,7 +482,94 @@
         <script src="script.js"></script>
 
 
-        <!-- Contact -->
+        <!-- Reviews Section -->
+
+        <section id="reviews-section">
+            <div class="reviews-container">
+                <div class="reviews-header">
+                    <h5>CLIENT TESTIMONIALS</h5>
+                    <h1>What Our Clients Say</h1>
+                    <p>Hear from those who have experienced excellence with Tripax Home Ltd.</p>
+                </div>
+
+                <div class="reviews-slider-wrapper">
+                    <button class="reviews-nav-btn prev" onclick="moveSlide(-1)"><i
+                            class="fas fa-arrow-left"></i></button>
+
+                    <div class="reviews-slider-container">
+                        <div class="reviews-slider" id="reviewsSlider">
+                            <div class="reviews-card"
+                                onclick="openModal('Ahmed Hossain', 'Business Owner', 'Tripax Home Ltd. exceeded our expectations. The quality of construction and attention to detail is remarkable. Our office space in Golden Heights is perfect for our growing team.')">
+                                <div class="reviews-quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p class="reviews-text">Tripax Home Ltd. exceeded our expectations. The quality of
+                                    construction and attention to detail is remarkable. Our office space in Golden
+                                    Heights is perfect for our growing team.</p>
+                                <div class="reviews-footer">
+                                    <div class="reviews-info">
+                                        <h3>Ahmed Hossain</h3>
+                                        <span>Business Owner</span>
+                                    </div>
+                                    <div class="reviews-stars">★★★★★</div>
+                                </div>
+                            </div>
+
+                            <div class="reviews-card"
+                                onclick="openModal('Nusrat Jahan', 'Homeowner', 'Moving into Skyline Residency was the best decision. The amenities, location, and community are exceptional. Tripax truly delivers on their promises.')">
+                                <div class="reviews-quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p class="reviews-text">Moving into Skyline Residency was the best decision. The
+                                    amenities, location, and community are exceptional. Tripax truly delivers on their
+                                    promises.</p>
+                                <div class="reviews-footer">
+                                    <div class="reviews-info">
+                                        <h3>Nusrat Jahan</h3>
+                                        <span>Homeowner</span>
+                                    </div>
+                                    <div class="reviews-stars">★★★★★</div>
+                                </div>
+                            </div>
+
+                            <div class="reviews-card"
+                                onclick="openModal('Karim Rahman', 'Investor', 'As an investor, I look for reliability and value. Tripax Home Ltd. provided both. Their project management is top-tier and transparent.')">
+                                <div class="reviews-quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p class="reviews-text">As an investor, I look for reliability and value. Tripax Home
+                                    Ltd. provided both. Their project management is top-tier and transparent.</p>
+                                <div class="reviews-footer">
+                                    <div class="reviews-info">
+                                        <h3>Karim Rahman</h3>
+                                        <span>Investor</span>
+                                    </div>
+                                    <div class="reviews-stars">★★★★★</div>
+                                </div>
+                            </div>
+
+                            <div class="reviews-card">
+                                <div class="reviews-quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p class="reviews-text">The architectural aesthetics of their builds are what caught my
+                                    eye. Living in a Tripax home feels like living in a piece of art.</p>
+                                <div class="reviews-footer">
+                                    <div class="reviews-info">
+                                        <h3>Sarah Islam</h3>
+                                        <span>Designer</span>
+                                    </div>
+                                    <div class="reviews-stars">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="reviews-nav-btn next" onclick="moveSlide(1)"><i
+                            class="fas fa-arrow-right"></i></button>
+                </div>
+
+                <div class="reviews-input-section">
+                
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+
+
+        <!-- Contact Section-->
         <section id="contact">
             <div class="contact-container">
                 <p class="section-label">GET IN TOUCH</p>
