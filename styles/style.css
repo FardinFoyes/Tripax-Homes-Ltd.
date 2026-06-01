@@ -32,12 +32,25 @@ a {
 }
 
 .navbar {
-    width: min(1440px, calc(100% - 64px));
+    width: min(1640px, calc(100% - 64px));
     margin: 0 auto;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+
+    border-radius: 25px;
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
+
 
 
 .header {
@@ -108,7 +121,7 @@ a {
 
 .nav a:hover {
     color: #000000;
-    border-radius: 8px;
+    border-radius: 20px;
     width: 80px;
     height: 40px;
     background: var(--gold);
@@ -129,7 +142,7 @@ a {
 }
 
 .btn:hover {
-    transform: translateY(-1px);
+    transform: translateY(-2px);
 }
 
 .btn-small {
@@ -1009,20 +1022,6 @@ a {
     border-color: #FFB800;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .reviews-card {
-        min-width: 100%;
-    }
-
-    .reviews-header h1 {
-        font-size: 32px;
-    }
-
-    .reviews-modal-content {
-        width: 90%;
-    }
-}
 
 /* Contact Section*/
 #contact {
@@ -1349,4 +1348,20 @@ a {
 
 .footer-links a:hover {
     color: #F5A623;
+}
+
+
+/* Responsive */
+@media screen (max-width: 576px) {
+    .about {
+        min-width: 100%;
+    }
+
+    .reviews-header h1 {
+        font-size: 32px;
+    }
+
+    .reviews-modal-content {
+        width: 90%;
+    }
 }
